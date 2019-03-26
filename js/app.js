@@ -35,28 +35,28 @@ console.log("it's running!")
 
 //  A list of student names from our class, each with a location and each with a list of favorite tv shows.
     // Objects
-    // const StudentsInClass = {
-    //     student1: {
+    // const StudentsInClass = [
+    //    {
     //         name: "",
     //         location: "",
     //         favoriteTvShow: "",
     //     },
-    //     student2: {
+    //      {
     //         name: "",
     //         location: "",
     //         favoriteTvShow: "",
     //     },
-    //     student3: {
+    //      {
     //         name: "",
     //         location: "",
     //         favoriteTvShow: "",
     //     },
-    //     student4: {
+    //      {
     //         name: "",
     //         location: "",
     //         favoriteTvShow: "",
     //     }
-    // }
+    // ]
 
 // 2. Take it Easy
 // Make an array that holds all of the colors of the rainbow.
@@ -73,3 +73,51 @@ const roger = {
 }
 // Write code that will access your hobby from the object that you just created.
 console.log(roger.hobby);
+
+// 3. Crazy Object!
+
+const crazyObject = {
+    taco: [
+      {
+        meat: 'steak',
+        cheese: ['panela', 'queso', 'chihuahua']
+      },
+      {
+        meat: 'chicken',
+        salsa: ["pico", "hot", "hotter", "really hot", "really really hot", "omg my mouth is burning"]
+      },
+    ],
+    larry: {
+      nicknames: ["LD", "Chicken Teriyaki Boyyyyyy"],
+      quotes: ["Pretty pretty prettayyyyy good", "Is that a parkinson's thing?", "women love a self confident bald man", "I'm a walking talking enigma"],
+      characters: [
+        {
+          name: "Jeff",
+          occupation: "manager"
+        },
+        {
+          name: "funkhauser",
+          occupation: "tv dude"
+        },
+        {
+          name: "susie",
+          occupation: "jeffs wife",
+          favourtieHobby: "Swearing at Larry and Jeff"
+        },
+      ]
+    }
+  }
+  
+//   Use crazyObject to log the following.
+
+// "omg my mouth is burning"
+// "Pretty pretty prettayyyyy good"
+// "Swearing at Larry and Jeff"
+// "Chicken Teriyaki Boyyyyyy"
+// The object the contains the name funkhauser
+
+console.log(crazyObject.taco[1].salsa[5])
+console.log(crazyObject.larry.quotes[0])
+console.log(crazyObject.larry.characters[2].favourtieHobby)
+console.log(crazyObject.larry.nicknames[1])
+console.log(crazyObject.larry.characters[1].name)
